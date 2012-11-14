@@ -1,14 +1,14 @@
 import com.mpowerpayments.mpower.*;
 
-public class CheckoutExample {
+public class RedirectCheckoutExample {
 	public static void main(String args[]) throws Exception {
 
 		// Setup your API keys and mode
 		MPowerSetup apiSetup = new MPowerSetup();
-		apiSetup.setMasterKey("dd6f2c90-f075-012f-5b69-00155d866600");
-		apiSetup.setPrivateKey("test_private_oDLVld1eNyh0IsetdhdJvcl0ygA");
-		apiSetup.setPublicKey("test_public_zzF3ywvX9DE-dSDNhUqKoaTI4wc");
-		apiSetup.setToken("ca03737cf94wcf644f36"); 
+		apiSetup.setMasterKey("82403450-ee3a-4c57-9564-a8fbe30c5fb7");
+		apiSetup.setPrivateKey("test_private_jKxSyaylcQdrQcuxAOFAbxvK5w4");
+		apiSetup.setPublicKey("test_public_M6-fRS1RCnzlGqgeLaBF5vLLoKs");
+		apiSetup.setToken("7f6c81c1ea223674416e"); 
 		apiSetup.setMode("test");
 
 		// Setup your store information
@@ -34,6 +34,7 @@ public class CheckoutExample {
 			System.out.println("Invoice URL: "+co.getInvoiceUrl());
 		}else{
 			System.out.println("Error Occured: "+ co.getResponseCode());
+			System.out.println(co.getResponseText());
 		}
 	}
 }
