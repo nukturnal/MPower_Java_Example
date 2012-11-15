@@ -36,8 +36,7 @@ public class OnsiteCheckoutExample {
 
 		// Create the invoice
 		if (co.create("0244124660")) {
-			System.out.println("OPR Token: "+co.token);
-			System.out.println("Invoice Token: "+co.invoiceToken);
+			System.out.println("OPR Token: "+co.getToken());
 			System.out.println("Response Message: "+co.getResponseText());
 
 			System.out.println("\nEnter Confirmation Code: ");
@@ -50,11 +49,12 @@ public class OnsiteCheckoutExample {
 
       // Issue a Charge using your OPR Token + the confirmation token
       if (co.charge(co.token, confirmToken)) {
-      	System.out.println("Status: "+co.token);
+        System.out.println("Status: "+co.getStatus());
 				System.out.println("Receipt URL: "+co.getReceiptUrl());
+        System.out.println("Customer Name: "+co.getCustomerInfo("name"));
 				System.out.println("Response Message: "+co.getResponseText());
       }else{
-      	System.out.println("Status: "+co.token);
+      	System.out.println("Status: "+co.getStatus());
 				System.out.println("Response Message: "+co.getResponseText());
       }
 
