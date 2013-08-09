@@ -10,11 +10,11 @@ public class OnsiteCheckoutExample {
 
 		// Setup your API keys and mode
 		MPowerSetup apiSetup = new MPowerSetup();
-		apiSetup.setMasterKey("82403450-ee3a-4c57-9564-a8fbe30c5fb7");
-		apiSetup.setPrivateKey("test_private_jKxSyaylcQdrQcuxAOFAbxvK5w4");
-		apiSetup.setPublicKey("test_public_M6-fRS1RCnzlGqgeLaBF5vLLoKs");
-		apiSetup.setToken("7f6c81c1ea223674416e"); 
-		apiSetup.setMode("test");
+    apiSetup.setMasterKey("dd6f2c90-f075-012f-5b69-00155d866600");
+    apiSetup.setPrivateKey("test_private_oDLVlm1eNyh0IsetdhdJvcl0ygA");
+    apiSetup.setPublicKey("test_public_zzF3ywvX9DE-OSDNhUqKoaTI4wc");
+    apiSetup.setToken("ca03737cf942cf644f36"); 
+    apiSetup.setMode("test");
 
 		// Setup your store information
 		MPowerCheckoutStore storeSetup = new MPowerCheckoutStore();
